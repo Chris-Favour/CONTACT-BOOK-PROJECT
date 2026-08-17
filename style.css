@@ -1,0 +1,413 @@
+/* ==============================
+   BASIC PAGE STYLING
+============================== */
+
+/* Remove default spacing from the browser */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body of the website */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* Light background */
+    background-color: #f4f6f8;
+
+    color: #333;
+
+    /* Add some space around the page */
+    padding: 30px 15px;
+}
+
+
+/* Main container */
+.container {
+    width: 100%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+}
+
+
+/* ==============================
+   HEADER
+============================== */
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+header h1 {
+    font-size: 32px;
+    color: #1d3557;
+    margin-bottom: 8px;
+}
+
+
+header p {
+    color: #777;
+    font-size: 16px;
+}
+
+
+/* ==============================
+   FORM SECTION
+============================== */
+
+.form-section {
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    /* Small shadow around the box */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+
+    margin-bottom: 30px;
+}
+
+
+.form-section h2 {
+    margin-bottom: 20px;
+
+    color: #1d3557;
+}
+
+
+/* Each input group */
+.form-group {
+    margin-bottom: 18px;
+}
+
+
+/* Labels */
+.form-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-weight: bold;
+
+    color: #444;
+}
+
+
+/* Input and textarea */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+
+    outline: none;
+
+    font-family: inherit;
+}
+
+
+/* Input when the user clicks inside it */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #1d72f2;
+}
+
+
+/* ==============================
+   BUTTONS
+============================== */
+
+.button-container {
+    display: flex;
+
+    gap: 10px;
+}
+
+
+.button-container button {
+    border: none;
+
+    padding: 12px 20px;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    background-color: #1d72f2;
+
+    color: white;
+}
+
+
+/* Add button hover */
+#submitButton:hover {
+    background-color: #155ac2;
+}
+
+
+/* Cancel button */
+.cancel-button {
+    background-color: #777 !important;
+
+    display: none;
+}
+
+
+.cancel-button:hover {
+    background-color: #555 !important;
+}
+
+
+/* ==============================
+   CONTACT SECTION
+============================== */
+
+.contacts-section {
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Header containing title and search */
+.contacts-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    margin-bottom: 25px;
+}
+
+
+.contacts-header h2 {
+    color: #1d3557;
+
+    margin-bottom: 5px;
+}
+
+
+#contactCount {
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* ==============================
+   SEARCH
+============================== */
+
+.search-container {
+    width: 300px;
+}
+
+
+.search-container input {
+    width: 100%;
+
+    padding: 11px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    outline: none;
+
+    font-size: 14px;
+}
+
+
+.search-container input:focus {
+    border-color: #1d72f2;
+}
+
+
+/* ==============================
+   CONTACT CARDS
+============================== */
+
+.contact-list {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+
+/* Individual contact card */
+.contact-card {
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    padding: 20px;
+
+    background-color: #fafafa;
+}
+
+
+/* Contact name */
+.contact-card h3 {
+    color: #1d3557;
+
+    margin-bottom: 15px;
+
+    font-size: 20px;
+}
+
+
+/* Contact information */
+.contact-info {
+    margin-bottom: 8px;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+.contact-info strong {
+    color: #444;
+}
+
+
+/* Buttons at bottom of contact */
+.contact-buttons {
+    display: flex;
+
+    gap: 8px;
+
+    margin-top: 15px;
+}
+
+
+/* Edit and Delete buttons */
+.contact-buttons button {
+    border: none;
+
+    padding: 8px 13px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    color: white;
+
+    font-size: 13px;
+}
+
+
+/* Edit button */
+.edit-button {
+    background-color: #f4a261;
+}
+
+
+.edit-button:hover {
+    background-color: #e76f51;
+}
+
+
+/* Delete button */
+.delete-button {
+    background-color: #e63946;
+}
+
+
+.delete-button:hover {
+    background-color: #c1121f;
+}
+
+
+/* ==============================
+   EMPTY MESSAGE
+============================== */
+
+.empty-message {
+    text-align: center;
+
+    padding: 40px 20px;
+
+    color: #777;
+}
+
+
+.empty-icon {
+    font-size: 45px;
+
+    margin-bottom: 10px;
+}
+
+
+.empty-message h3 {
+    color: #444;
+
+    margin-bottom: 8px;
+}
+
+
+/* ==============================
+   RESPONSIVE DESIGN
+============================== */
+
+/* This applies to smaller screens */
+@media (max-width: 700px) {
+
+    body {
+        padding: 15px 10px;
+    }
+
+
+    header h1 {
+        font-size: 26px;
+    }
+
+
+    /* Put title and search on top of each other */
+    .contacts-header {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .search-container {
+        width: 100%;
+    }
+
+
+    /* Make contacts one column on mobile */
+    .contact-list {
+        grid-template-columns: 1fr;
+    }
+
+
+    .form-section,
+    .contacts-section {
+        padding: 18px;
+    }
+
+}
