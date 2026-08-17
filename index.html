@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- This makes the website responsive on phones -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Book</title>
+
+    <!-- Linking our CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Main container for the whole application -->
+    <div class="container">
+
+        <!-- Page heading -->
+        <header>
+            <h1> Contact Book</h1>
+            <p>Save and manage your contacts easily</p>
+        </header>
+
+
+        <!-- =========================
+             CONTACT FORM
+        ========================== -->
+
+        <section class="form-section">
+
+            <h2 id="formTitle">Add New Contact</h2>
+
+            <!-- Contact form -->
+            <form id="contactForm">
+
+                <!-- Full Name -->
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+
+                    <input
+                        type="text"
+                        id="fullName"
+                        placeholder="Enter full name"
+                        required
+                    >
+                </div>
+
+
+                <!-- Phone Number -->
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        placeholder="e.g. 08012345678"
+                        required
+                    >
+                </div>
+
+
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="example@email.com"
+                        required
+                    >
+                </div>
+
+
+                <!-- Address -->
+                <div class="form-group">
+                    <label for="address">Address</label>
+
+                    <textarea
+                        id="address"
+                        placeholder="Enter address"
+                        rows="3"
+                        required
+                    ></textarea>
+                </div>
+
+
+                <!-- Buttons -->
+                <div class="button-container">
+
+                    <button type="submit" id="submitButton">
+                        Add Contact
+                    </button>
+
+                    <!-- This button appears when editing a contact -->
+                    <button
+                        type="button"
+                        id="cancelButton"
+                        class="cancel-button"
+                    >
+                        Cancel
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACT LIST
+        ========================== -->
+
+        <section class="contacts-section">
+
+            <div class="contacts-header">
+
+                <div>
+                    <h2>My Contacts</h2>
+                    <p id="contactCount">0 contacts</p>
+                </div>
+
+                <!-- Search box -->
+                <div class="search-container">
+
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Search by name..."
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- Contacts will be displayed here by JavaScript -->
+            <div id="contactList" class="contact-list">
+
+                <!-- JavaScript will add contacts here -->
+
+            </div>
+
+
+            <!-- Message shown when there are no contacts -->
+            <div id="emptyMessage" class="empty-message">
+
+                <div class="empty-icon">📭</div>
+
+                <h3>No Contacts Yet</h3>
+
+                <p>
+                    Add your first contact using the form above.
+                </p>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <!-- Linking our JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
